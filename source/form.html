@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>HTML Academy: Кэт энерджи</title>
+    </head>
+
+    <body class="page__body">
+        <header class="page-header">
+            <nav class="main-nav">
+                <a class="page-header__logo" href="index.html">
+                    <img src="img/logo-mobile.svg" width="34" height="38" alt="Логотип с котом" />
+                    <img src="img/logo-energy.svg" width="101" height="18" alt="Название  сайта" />
+                </a>
+                <button class="main-nav__toggle" type="button">
+                    <span class="visually-hidden">Открыть меню</span>
+                </button>
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item main-nav__item--active">
+                            <a class="main-nav__link" href="index.html">главная</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#">каталог продукции</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#">подбор программы</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="page-main">
+            <h1>Подбор программы</h1>
+            <span>Заполните анкету, и мы подберем программу питания для вашего кота</span>
+            <form class="page-main__form">
+                <div class="main-form__wrapper">
+
+                    <fieldset class="main-form__fieldset fieldset-name">
+                        <ul class="fieldset-name__list">
+                            <li class="fieldset-name__item">
+                                <label for="cat-name">ИМЯ:*</label>
+                                <input type="text" name="cat-name" id="cat-name">
+                            </li>
+                            <li class="fieldset-name__item">
+                                <label for="weight">Вес (кг):*</label>
+                                <input type="text" name="weight" id="weight">
+                            </li>
+                            <li class="fieldset-name__item">
+                                <label for="age">Возраст (лет):</label>
+                                <input type="text" name="age" id="age">
+                            </li>
+                        </ul>
+                    </fieldset>
+
+
+                    <fieldset class="page-main__fieldset fieldset-program">
+                        <ul class="fieldset-program__list">
+                            <li class="fieldset-program__item">
+                                <input type="radio" name="slimming" id="slimming">
+                                <label for="slimming">похудение</label>
+                            </li>
+                            <li class="fieldset-program__item">
+                                <input type="radio" name="plump" id="plump">
+                                <label for="plump">Набор массы</label>
+                            </li>
+                            <li class="fieldset-program__item">
+                                <input type="radio" name="advice" id="advice">
+                                <label for="advice">Не знаю (Нужен ваш совет)</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <fieldset class="page-main__fieldset fieldset-cocntacts">
+                        <h2 class="fieldset-cocntacts__title">Контактные данные (владельца кота)</h2>
+                        <ul class="fieldset-cocntacts__list">
+                            <li class="fieldset-cocntacts__item">
+                                <label for="email">E-mail:*</label>
+                                <input type="email" name="email" id="email">
+                            </li>
+                            <li class="fieldset-cocntacts__utem">
+                                <label for="tel">Телефон:*</label>
+                                <input type="tel" name="tel" id="tel">
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <fieldset class="page-main__fieldset fieldset-comment">
+                        <h2 class="fieldset-comment__title">Комментарий</h2>
+                        <div class="fieldset-comment__wrapper">
+                            <input type="text" name="comment">
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="page-main__fieldset fieldset-additionally">
+                        <h2 class="fieldset-additionally__title">Дополнительно</h2>
+                        <ul class="fieldset-additionally__list">
+                            <li class="fieldset-additionally__item">
+                                <input type="checkbox" name="sweetener" id="sweetener">
+                                <label for="sweetener">сахарозаменитель</label>
+                            </li>
+                            <li class="fieldset-additionally__item">
+                                <input type="checkbox" name="water" id="water">
+                                <label for="water">питьевая вода</label>
+                            </li>
+                            <li class="fieldset-additionally__item">
+                                <input type="checkbox" name="milk" id="milk">
+                                <label for="milk">молоко</label>
+                            </li>
+                            <li class="fieldset-additionally__item">
+                                <input type="checkbox" name="vitamins" id="vitamins">
+                                <label for="vitamins">витамины</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <button class="button" type="button">отправить заявку</button>
+                <span><sup>*</sup> — Обязательные поля</span>
+
+            </form>
+        </main>
+
+        <footer class="page-footer">
+            <div class="page-footer__contacts">
+                <p>приглашаем к сотрудничеству дилеров!</p>
+                <span>ул. Большая Конюшенная, д. 19/8</span>
+                <span>Санкт-Петербург</span>
+            </div>
+
+            <div class="page-footer__map"></div>
+
+            <div class="page-footer__wrapper">
+                <a class="page-footer__logo" href="index.html">
+                    <img src="img/logo-energy.svg" width="128" height="24" alt="Название сайта" />
+                </a>
+                <div class="page-footer__social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="socoal__link" href="#" aria-label="вконтакте"></a>
+                        </li>
+                        <li class="social__item">
+                            <a class="socoal__link" href="#" aria-label="инстаграм"></a>
+                        </li>
+                        <li class="social__item">
+                            <a class="socoal__link" href="#" aria-label="фейсбук"></a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
+                    <span>HTML Academy</span>
+                    <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип html-academy" />
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>
