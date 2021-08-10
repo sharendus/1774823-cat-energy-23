@@ -1,4 +1,6 @@
 .main-nav {
+  display: flex;
+  flex-direction: column;
   font-family: @oswald-fnt;
   font-size: 20px;
   line-height: 20px;
@@ -7,8 +9,15 @@
   margin: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .main-nav-wrap {
-  margin-bottom: 17.5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,6 +35,24 @@
   list-style: none;
   text-align: center;
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    flex-direction: row;
+  }
+
+  .main-nav__link {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .main-nav__toggle, .main-nav__logo-energy {
+    display: none;
+  }
+}
+
+
 
 .main-nav__link {
   color: @black-txt;
