@@ -44,21 +44,22 @@
             <span class="form-selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</span>
           </div>
             <form class="form">
+              <div class="form-fieldset__wrapper">
                 <fieldset class="form__fieldset fieldset-name">
-                    <span class="fildset-name__item">
-                        <label class="fildset-name__label" for="cat-name" >Имя:*</label>
-                        <input class="fildset-name__input" type="text" name="cat-name" id="cat-name" placeholder="барсик" />
-                    </span>
+                  <span class="fildset-name__item">
+                      <label class="fildset-name__label" for="cat-name" >Имя:*</label>
+                      <input class="fildset-name__input" type="text" name="cat-name" id="cat-name" placeholder="барсик" />
+                  </span>
 
-                    <span class="fildset-name__item">
-                        <label class="fildset-name__label" for="weight">Вес (кг):*</label>
-                        <input class="fildset-name__input" type="text" name="weight" id="weight" placeholder="7" />
-                    </span>
+                  <span class="fildset-name__item">
+                      <label class="fildset-name__label" for="weight">Вес (кг):*</label>
+                      <input class="fildset-name__input" type="text" name="weight" id="weight" placeholder="7" />
+                  </span>
 
-                    <span class="fildset-name__item">
-                        <label class="fildset-name__label" for="age">Возраст (лет):</label>
-                        <input class="fildset-name__input" type="text" name="age" id="age" placeholder="7" />
-                    </span>
+                  <span class="fildset-name__item">
+                      <label class="fildset-name__label" for="age">Возраст (лет):</label>
+                      <input class="fildset-name__input" type="text" name="age" id="age" placeholder="7" />
+                  </span>
                 </fieldset>
 
                 <fieldset class="form__fieldset fieldset-program">
@@ -75,10 +76,12 @@
                         <label for="advice">Не знаю (Нужен ваш совет)</label>
                     </span>
                 </fieldset>
+              </div>
 
                 <fieldset class="form__fieldset fieldset-cocntacts">
                     <h2 class="fieldset__title">Контактные данные (владельца кота)</h2>
-                    <span class="fieldset-cocntacts__item">
+                    <div class="fieldset-cocntacts__wrapper">
+                      <span class="fieldset-cocntacts__item">
                         <label for="email">E-mail:*</label>
                         <input class="fieldset-cocntacts__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" />
                     </span>
@@ -87,6 +90,8 @@
                         <label for="tel">Телефон:*</label>
                         <input class="fieldset-cocntacts__input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" />
                     </span>
+                    </div>
+
                 </fieldset>
 
                 <fieldset class="form__fieldset fieldset-comment">
@@ -98,25 +103,28 @@
 
                 <fieldset class="form__fieldset fieldset-additionally">
                     <h2 class="fieldset__title">Дополнительно</h2>
-                    <span class="fieldset-additionally__item">
+                    <div class="fieldset__title__wrapper">
+                      <span class="fieldset-additionally__item">
                         <input type="checkbox" name="sweetener" id="sweetener" />
                         <label for="sweetener">сахарозаменитель</label>
-                    </span>
+                      </span>
 
-                    <span class="fieldset-additionally__item">
-                        <input type="checkbox" name="water" id="water" />
-                        <label for="water">питьевая вода</label>
-                    </span>
+                      <span class="fieldset-additionally__item">
+                          <input type="checkbox" name="water" id="water" />
+                          <label for="water">питьевая вода</label>
+                      </span>
 
-                    <span class="fieldset-additionally__item">
-                        <input type="checkbox" name="milk" id="milk" />
-                        <label for="milk">молоко</label>
-                    </span>
+                      <span class="fieldset-additionally__item">
+                          <input type="checkbox" name="milk" id="milk" />
+                          <label for="milk">молоко</label>
+                      </span>
 
-                    <span class="fieldset-additionally__item">
-                        <input type="checkbox" name="vitamins" id="vitamins" />
-                        <label for="vitamins">витамины</label>
-                    </span>
+                      <span class="fieldset-additionally__item">
+                          <input type="checkbox" name="vitamins" id="vitamins" />
+                          <label for="vitamins">витамины</label>
+                      </span>
+                    </div>
+
                 </fieldset>
                 <button class="fieldset-button button" type="submit">Отправить заявку</button>
                 <span class="fieldset-required"><sup>*</sup> — Обязательные поля</span>

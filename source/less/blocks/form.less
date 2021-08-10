@@ -8,6 +8,13 @@
   border: none;
 }
 
+.form-fieldset__wrapper  {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .fildset-name__item {
   display: flex;
   align-items: center;
@@ -46,6 +53,12 @@
 
 .fieldset-cocntacts {
   padding-top: 26px;
+}
+
+.fieldset-cocntacts__wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
 }
 
 .fieldset__title {
@@ -88,6 +101,12 @@
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 19px;
+}
+
+.fieldset__title__wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
 }
 
 .fieldset-button {

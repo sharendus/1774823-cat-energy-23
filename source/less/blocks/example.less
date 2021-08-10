@@ -1,6 +1,11 @@
 .example__wrapper {
   background-color: @background-grey;
   padding: 26px 6.25%;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .example__title {
