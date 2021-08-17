@@ -2,6 +2,11 @@
   background-color: @background-grey;
   padding: 26px 6.25%;
 
+  @media (min-width: @tablet-width) {
+    padding: 0 4%;
+    padding-top: 43px;
+  }
+
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -16,6 +21,12 @@
   display: block;
   margin: 0;
   margin-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 67px;
+  }
 }
 
 .example__text {
@@ -27,10 +38,29 @@
   display: block;
   margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 50px;;
+  }
 }
 
 .example__list {
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.example__def-wrapper {
+  @media (min-width: @tablet-width){
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 15px 6%;
+    margin-right: 24px;
+  }
 }
 
 .example__def-data {
@@ -43,6 +73,12 @@
   text-transform: uppercase;
   display: block;
   width: 80px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    font-size: 14px;
+    line-height: 14px;;
+  }
 }
 
 .example__def-term {
@@ -54,6 +90,12 @@
   text-transform: uppercase;
   display: block;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    font-size: 30px;
+    line-height: 37px;;
+  }
 }
 
 .example__cost-data {
