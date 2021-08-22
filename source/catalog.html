@@ -46,15 +46,21 @@
                         <a href="#">
                             <img src="img/catalog-1-desktop.png" width="68" height="86" alt="Вкус курицы 500 грамм" />
                         </a>
-                        <a href="#"><h2 class="catalog__title">Cat Energy PRO 500 г</h2></a>
-                        <dl class="catalog__table">
-                            <dt>Масса</dt>
-                            <dd>500 г</dd>
-                            <dt>Вкус</dt>
-                            <dd>Курица</dd>
-                            <dt>Цена</dt>
-                            <dd>700 Р.</dd>
-                        </dl>
+
+                        <div class="catalog__wrapper">
+                          <a href="#"><h2 class="catalog__title">Cat Energy PRO 500 г</h2></a>
+                          <dl class="catalog__table">
+                              <dt>Масса</dt>
+                              <dd>500 г</dd>
+                              <dt>Вкус</dt>
+                              <dd>Курица</dd>
+                              <dt>Цена</dt>
+                              <dd>700 Р.</dd>
+                          </dl>
+                        </div>
+
+
+
                         <button class="button" type="button">заказать</button>
                     </li>
                     <li class="catalog__item">
@@ -209,14 +215,17 @@
         </main>
         <footer class="page-footer">
           <div class="page-footer__contacts">
-              <p class="page-footer__slogan">Приглашаем к сотрудничеству дилеров!</p>
+              <p class="page-footer__slogan">Приглашаем <br>к сотрудничеству дилеров!</p>
               <p class="page-footer__adres">
                 <span>ул. Большая Конюшенная, д. 19/8</span>
                 <span>Санкт-Петербург</span>
               </p>
           </div>
 
-          <div class="page-footer__map"></div>
+          <div class="page-footer__map">
+            <h1 class="visually-hidden"></h1>
+            <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1629441299724!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
 
           <div class="page-footer__wrapper">
               <a class="page-footer__logo" href="#">

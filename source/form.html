@@ -65,15 +65,15 @@
                 <fieldset class="form__fieldset fieldset-program">
                     <span class="fieldset-program__item">
                         <input type="radio" name="program" id="slimming" />
-                        <label for="slimming">Похудение</label>
+                        <label class="fieldset-program__label" for="slimming">Похудение</label>
                     </span>
                     <span class="fieldset-program__item">
                         <input type="radio" name="program" id="plump" />
-                        <label for="plump">Набор массы</label>
+                        <label class="fieldset-program__label" for="plump">Набор массы</label>
                     </span>
                     <span class="fieldset-program__item">
                         <input type="radio" name="program" id="advice" />
-                        <label for="advice">Не знаю (Нужен ваш совет)</label>
+                        <label class="fieldset-program__label" for="advice">Не знаю (Нужен ваш совет)</label>
                     </span>
                 </fieldset>
               </div>
@@ -82,12 +82,12 @@
                     <h2 class="fieldset__title">Контактные данные (владельца кота)</h2>
                     <div class="fieldset-cocntacts__wrapper">
                       <span class="fieldset-cocntacts__item">
-                        <label for="email">E-mail:*</label>
+                        <label class="fieldset-cocntacts__label" for="email">E-mail:*</label>
                         <input class="fieldset-cocntacts__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" />
                     </span>
 
                     <span class="fieldset-cocntacts__item">
-                        <label for="tel">Телефон:*</label>
+                        <label class="fieldset-cocntacts__label" for="tel">Телефон:*</label>
                         <input class="fieldset-cocntacts__input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" />
                     </span>
                     </div>
@@ -105,43 +105,49 @@
                     <h2 class="fieldset__title">Дополнительно</h2>
                     <div class="fieldset__title__wrapper">
                       <span class="fieldset-additionally__item">
-                        <input type="checkbox" name="sweetener" id="sweetener" />
+                        <input class="fieldset-additionally__input" type="checkbox" name="sweetener" id="sweetener" />
                         <label for="sweetener">сахарозаменитель</label>
                       </span>
 
                       <span class="fieldset-additionally__item">
-                          <input type="checkbox" name="water" id="water" />
+                          <input class="fieldset-additionally__input" type="checkbox" name="water" id="water" />
                           <label for="water">питьевая вода</label>
                       </span>
 
                       <span class="fieldset-additionally__item">
-                          <input type="checkbox" name="milk" id="milk" />
+                          <input class="fieldset-additionally__input" type="checkbox" name="milk" id="milk" />
                           <label for="milk">молоко</label>
                       </span>
 
                       <span class="fieldset-additionally__item">
-                          <input type="checkbox" name="vitamins" id="vitamins" />
+                          <input class="fieldset-additionally__input" type="checkbox" name="vitamins" id="vitamins" />
                           <label for="vitamins">витамины</label>
                       </span>
                     </div>
 
                 </fieldset>
-                <button class="fieldset-button button" type="submit">Отправить заявку</button>
-                <span class="fieldset-required"><sup>*</sup> — Обязательные поля</span>
+                <div class="form-button">
+                  <button class="fieldset-button button" type="submit">Отправить заявку</button>
+                  <span class="fieldset-required"><sup>*</sup> — Обязательные поля</span>
+                </div>
+
             </form>
 
         </main>
 
         <footer class="page-footer">
           <div class="page-footer__contacts">
-              <p class="page-footer__slogan">Приглашаем к сотрудничеству дилеров!</p>
+              <p class="page-footer__slogan">Приглашаем <br>к сотрудничеству дилеров!</p>
               <p class="page-footer__adres">
                 <span>ул. Большая Конюшенная, д. 19/8</span>
                 <span>Санкт-Петербург</span>
               </p>
           </div>
 
-          <div class="page-footer__map"></div>
+          <div class="page-footer__map">
+            <h1 class="visually-hidden"></h1>
+            <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1629441299724!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
 
           <div class="page-footer__wrapper">
               <a class="page-footer__logo" href="#">

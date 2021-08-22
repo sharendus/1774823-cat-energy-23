@@ -1,7 +1,6 @@
 .page-footer__wrapper {
   background-color: @basic_grey;
   padding: 0 6.25%;
-  padding-top: 39px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
@@ -12,7 +11,7 @@
 }
 
 .page-footer__contacts {
-  padding: 27px 6.25%;
+  padding: 30px 6.25%;
   display: flex;
   background-color: @basic_grey;
 }
@@ -24,10 +23,11 @@
 .page-footer__slogan {
   font-family: @oswald-fnt;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
   display: block;
+  width: 140px;
   margin: 0;
 }
 
@@ -38,12 +38,15 @@
   font-weight: 400;
   color: @special_dark-grey;
   display: block;
+  width: 140px;
   margin: 0;
 }
 
 .page-footer__logo {
   display: block;
-  margin-bottom: 32px;
+  padding-top: 34px;
+  padding-bottom: 27px;
+  border-bottom: 1px solid #D9D9D9;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -56,6 +59,7 @@
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -64,6 +68,12 @@
   @media (min-width: @tablet-width) {
     margin-right: 28px;
   }
+}
+
+.page-footer__social {
+  padding-top: 21px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #D9D9D9;
 }
 
 .page-footer__copyright {
@@ -89,6 +99,12 @@
 .copyiright__img {
   text-align: center;
 }
+
+.social__link {
+
+  display: block;
+}
+
 
 .social__link:hover path {
   fill: @basic_green;
