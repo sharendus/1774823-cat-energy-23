@@ -1,8 +1,11 @@
 .extra-product {
-  margin-top: 25px;
+  padding: 0 6.25%;
+  padding-top: 23px;
+
 }
 
 .extra-product__wrapper {
+
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -16,7 +19,8 @@
   line-height: 24px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 36px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid @border-bottom-2;
 }
 
 .extra-product__list {
@@ -27,7 +31,8 @@
 .extra-product__item {
   list-style: none;
   padding-top: 13px;
-  padding-bottom: 19px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid @border-bottom-2;
 
   @media (min-width: @desktop-width) {
     display: flex;

@@ -6,21 +6,94 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 141px 8%;
+    padding: 0 4%;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+}
 
+.catalog__card {
+  display: block;
+  margin: auto;
 }
 
 .catalog__item {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 19px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 6%;
+  padding-top: 20px;
   padding-bottom: 25px;
+  border-bottom: 1px solid @background-grey-2;
+
+  @media(min-width: @tablet-width) {
+    position: relative;
+    background-color: @basic_grey;
+    margin-top: 79px;
+    margin-bottom: 35px;
+    padding: 163px 11.5% 40px;
+    border-bottom: none;
+  }
+}
+
+.catalog__item--more {
+  position: relative;
+}
+
+.catalog__item--more::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: @border-grey-2;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 38px;
+}
+
+.catalog__item--more::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: @border-grey-2;
+  transform: rotate(90deg);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 38px;
+}
+
+.catalog__img {
+  width: 50%;
+
+  @media(min-width: @tablet-width) {
+    width: 100%;
+
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 234px;
+    margin: auto;
+    width: 324px;
+  }
+}
+
+.catalog__wrapper {
+  width: 50%;
+
+  @media(min-width: @tablet-width) {
+    width: 100%;
+  }
 }
 
 .catalog__title {
@@ -31,11 +104,22 @@
   color: @special_dark-grey-2;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 41px;
+  margin-bottom: 13px;
+  width: 76px;
+
+  @media(min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    width: 144px;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 .catalog__title--more {
+  width: 100%;
   text-align: center;
+  padding-top: 57px;
   margin-bottom: 8px;
 }
 
@@ -48,6 +132,11 @@
   margin: 0;
   padding: 0;
   margin-bottom: 22px;
+
+  @media(min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .catalog__text {
@@ -58,4 +147,12 @@
   color: @special_dark-grey;
   margin: 0;
   text-align: center;
+  margin-bottom: 20px;
 }
+
+.table__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+

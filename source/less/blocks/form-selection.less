@@ -1,6 +1,16 @@
 .form-selection {
   padding: 0 6.25%;
   padding-top: 27px;
+
+  @media(min-width: @tablet-width) {
+    padding: 0 9%;
+    padding-top: 53px;
+  }
+
+  @media(min-width: @desktop-width) {
+    padding: 0 7.6%;
+    padding-top: 63px;
+  }
 }
 
 .form-selection__title {
@@ -11,6 +21,16 @@
   display: block;
   margin: 0;
   margin-bottom: 37px;
+
+  @media(min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
+
+  @media(min-width: @desktop-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .form-selection__text {
@@ -23,4 +43,11 @@
   margin: 0;
   margin-bottom: 37px;
   width: 226px;
+
+  @media(min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 330px;
+    margin-bottom: 65px;
+  }
 }

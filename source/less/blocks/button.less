@@ -8,8 +8,7 @@
   color: @white-txt;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding: 11px 0;
   width: 100%;
   border: none;
 
@@ -23,6 +22,8 @@
 }
 
 .button--more {
+  font-size: 16px;
+  line-height: 20px;
   background-color: @basic_grey;
   color: @special_dark-grey;
 
@@ -40,14 +41,28 @@
       width: 244px;
       font-size: 20px;
       line-height: 20px;
-      padding-top: 15px;
-      padding-bottom: 15px;
+      padding-top: 17px;
+      padding-bottom: 17px;
     }
 }
 
 .fieldset-button {
   font-size: 16px;
   line-height: 20px;
-  padding: 10px 0;;
+  padding: 10px 0;
+  margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    width: 282px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 16px 0;;
+    margin-right: 63px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 568px;
+    margin-right: 83px;
+  }
 }
 
