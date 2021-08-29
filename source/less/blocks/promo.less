@@ -4,13 +4,13 @@
   background-size: contain;
   background-position: center;
   background-color: @basic_green;
-  height: 302px;
-  margin-bottom: 200px;
+  min-height: 302px;
+  margin-bottom: 21pxpx;
 
   @media (min-width: @tablet-width) {
     background-image: none;
-    background-color: @white-txt;
-    margin-bottom: 559px;
+    background-color: transparent;
+    margin-bottom: 527px;
   }
 
   @media (min-width: @desktop-width) {
@@ -18,8 +18,8 @@
     background-position-x: 50vw, left;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 720px;
-    margin-bottom: 210px;
+    height: 694px;
+    margin-bottom: 82px;
     margin-top: -124px;
   }
 }
@@ -67,7 +67,7 @@
     color: @black-txt;
     text-align: left;
     margin: 0;
-    margin-bottom: 41px;
+    margin-bottom: 40px;
   }
 
 }
@@ -89,6 +89,10 @@
     text-align: left;
     margin-bottom: 49px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .promo__image {
@@ -97,10 +101,18 @@
   margin-bottom: 3px;
 
   @media (min-width: @tablet-width) {
-    width: 664px;
+    width: 709px;
     min-height: 609px;
     position: absolute;
-    top: 251px;
-    left: 68px;
+    top: 253px;
+    left: 29px;
+    z-index: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 552px;
+    min-height: 499px;
+    top: 141px;
+    right: -159px;
   }
 }

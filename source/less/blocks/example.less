@@ -8,6 +8,8 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding: 0 7.6%;
+    padding-top: 22px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -27,6 +29,10 @@
     line-height: 60px;
     margin-bottom: 67px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 147px;
+  }
 }
 
 .example__text {
@@ -44,6 +50,11 @@
     line-height: 24px;
     margin-bottom: 50px;;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 436px;
+    margin-bottom: 67px;
+  }
 }
 
 .example__list {
@@ -52,7 +63,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
+    justify-content: flex-start;
   }
 }
 
@@ -78,6 +90,12 @@
     width: 22.88136%;
     text-align: center;
     margin-right: 5.9322%;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 58px;
+    margin-right: 42px;
+    width: 162px;
   }
 }
 
@@ -132,6 +150,11 @@
     flex-direction: column;
     margin: auto 0 auto auto;
   }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    margin: 0;
+  }
 }
 
 .example__cost-data {
@@ -152,9 +175,17 @@
     margin-bottom: 4px;
     margin-top: 4px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 64px;
+  }
 }
 
 .example__image {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+
+  }
 }

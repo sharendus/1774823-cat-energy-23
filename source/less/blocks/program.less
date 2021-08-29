@@ -6,7 +6,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 13.2%;
+    padding: 0 7.6%;
   }
 }
 
@@ -19,6 +19,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5.5%;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-gap: 6.5%;
   }
 }
 
@@ -34,6 +38,12 @@
     padding-bottom: 57px;
     margin-bottom: 30px;
     position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 9.4%;
+    padding-top: 78px;
+    padding-bottom: 59px;
   }
 }
 
@@ -67,15 +77,28 @@
   margin-bottom: 24px;
 
   &::before {
-    content: "";
-    display: block;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color: @basic_green;
-    position: absolute;
     right: 10px;
+    }
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 73px;
+    padding-left: 161px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: @basic_green;
+      position: absolute;
+      left: -1px;
+      top: -31px;
+      }
   }
 }
 
@@ -97,6 +120,11 @@
     margin-bottom: 33px;
     border-bottom: none;
     padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    margin-bottom: 7px;
   }
 }
 
