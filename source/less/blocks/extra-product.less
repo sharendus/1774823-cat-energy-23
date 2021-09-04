@@ -2,14 +2,29 @@
   padding: 0 6.25%;
   padding-top: 23px;
 
+  @media (min-width: @tablet-width) {
+    padding: 0 4%;
+    padding-top: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 3%;
+    padding-top: 40px;
+  }
 }
 
 .extra-product__wrapper {
+  border-top: 1px solid @border-bottom-2;
+
+  @media (min-width: @tablet-width) {
+    border: none
+  }
 
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 3fr 1fr;
     column-gap: 5.5%;
+    padding: 0 5%;
   }
 }
 
@@ -20,12 +35,23 @@
   font-weight: 400;
   margin: 0;
   padding-bottom: 35px;
-  border-bottom: 1px solid @border-bottom-2;
+
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 5%;
+    margin-bottom: 81px;
+  }
 }
 
 .extra-product__list {
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width){
+    border: 1px solid @border-bottom-2;
+  }
 }
 
 .extra-product__item {
@@ -34,8 +60,27 @@
   padding-bottom: 18px;
   border-bottom: 1px solid @border-bottom-2;
 
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 27px;
+    padding-bottom: 28px;
+    padding-left: 5.2%;
+    padding-right: 5.2%;
+    border-bottom: 1px solid @border-bottom-2;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
+    padding-top: 18px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-right: 0;
+    border: none;
+    border-bottom: 1px solid @border-bottom-2;
   }
 }
 
@@ -49,6 +94,11 @@
   color: @special_dark-grey-2;
   margin: 0;
   margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .extra-product__table {
@@ -62,10 +112,25 @@
   margin: 0;
   padding: 0;
   margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 19px;
+  }
 }
 
 .extra-product__button {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 0;
+
   @media (min-width: @desktop-width) {
-    width: 17%;
+    width: 100%;
   }
+}
+
+.extra-product__definition {
+  margin: 0;
+  margin-left: 50px;
 }

@@ -54,9 +54,9 @@
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
-  text-align: center;
   margin: 0;
   margin-bottom: 29px;
+  margin-left: 71px;
 
   &::before {
     content: "";
@@ -66,8 +66,8 @@
     border-radius: 50%;
     background-color: @basic_green;
     position: absolute;
-    right: 11px;
-    top: 14px;
+    top: -6px;
+    left: -69px;
   }
 
   @media (min-width: @tablet-width) {
@@ -75,18 +75,21 @@
   line-height: 36px;
   text-align: left;
   margin-bottom: 24px;
+  margin-left: 2px;
 
   &::before {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     right: 10px;
+    left: 65%;
+    top: 13px;
     }
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 73px;
-    padding-left: 161px;
+    padding-left: 159px;
 
     &::before {
       content: "";
@@ -96,9 +99,65 @@
       border-radius: 50%;
       background-color: @basic_green;
       position: absolute;
-      left: -1px;
-      top: -31px;
+      left: -0.6%;
+      top: -85%;
       }
+  }
+}
+
+.program__title--slim::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 36px;
+  height: 50px;
+  background-image: url(../../img/Vector-cat-slim.svg);
+  background-repeat: no-repeat;
+  top: -9px;
+  left: -62px;
+
+  @media (min-width: @tablet-width) {
+    width: 140px;
+    height: 194px;
+    top: 2px;
+    left: 70%;
+    background-size: contain;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 71px;
+    height: 97px;
+    top: -37px;
+    left: 2.5%;
+    background-size: contain;
+  }
+}
+
+.program__title--pro::after{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 67px;
+  height: 29px;
+  background-image: url(../../img/Vector-cat-pro.svg);
+  background-repeat: no-repeat;
+  top: 5px;
+  left: -78px;
+
+  @media (min-width: @tablet-width) {
+    width: 268px;
+    height: 112px;
+    top: 56px;
+    left: 59.5%;
+    background-size: contain;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 134px;
+    height: 56px;
+    top: -11px;
+    left: -4.9%;
+    background-size: contain;
   }
 }
 
@@ -117,7 +176,7 @@
     width: 344px;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 33px;
+    margin-bottom: 32px;
     border-bottom: none;
     padding: 0;
   }

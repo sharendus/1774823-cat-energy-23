@@ -6,18 +6,23 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding: 60px 6.25%;
+    padding: 55px 4.1%;
+  }
+
+  @media (min-width: @desktop-width) {
+
   }
 }
 
 .page-footer__contacts {
-  padding: 30px 6.25%;
+  padding: 27px 6.25%;
   display: flex;
   justify-content: space-between;
   background-color: @basic_grey;
 
   @media (min-width: @tablet-width) {
-    padding: 67px 9.25%;
+    padding: 65px 9.25%;
+    padding-bottom: 60px;
   }
 }
 
@@ -28,7 +33,7 @@
 .page-footer__slogan {
   font-family: @oswald-fnt;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
   display: block;
@@ -37,7 +42,7 @@
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
-    line-height: 22px;
+    line-height: 25px;
     width: 171px;
   }
 }
@@ -54,15 +59,22 @@
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
-    line-height: 22px;
+    line-height: 20px;
     width: 159px;
     text-align: right;
   }
 }
 
+.page-footer__street {
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-bottom: 17px;
+  }
+}
+
 .page-footer__logo {
   display: block;
-  padding-top: 34px;
+  padding-top: 39px;
   padding-bottom: 27px;
   border-bottom: 1px solid #D9D9D9;
 
@@ -75,11 +87,11 @@
 .social__list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 3px 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .social__item {
@@ -89,13 +101,11 @@
 }
 
 .page-footer__social {
-  padding-top: 21px;
-  padding-bottom: 15px;
   border-bottom: 1px solid #D9D9D9;
 }
 
 .page-footer__copyright {
-  padding: 28px 0;
+  padding: 29px 0 22px;
   display: flex;
   justify-content: space-between;
 
@@ -119,8 +129,11 @@
 }
 
 .social__link {
-
-  display: block;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
