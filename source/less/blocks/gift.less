@@ -4,11 +4,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: @basic_green;
-  min-height: 290px;
-  margin: 34px 0;
+  height: 290px;
+  margin: 34px 0 35px 0;
 
   @media (min-width: @tablet-width) {
-    min-height: 200px;
+    height: 200px;
     margin: 67px 0;
     margin-bottom: 76px;
   }
@@ -16,20 +16,35 @@
 
 .gift__text {
   display: block;
-  width: 161px;
+  position: relative;
+  width: 200px;
   font-family: @arial-fnt;
   font-size: 16px;
   line-height: 20px;
   color: @white-txt;
   margin: 0 auto;
   text-align: center;
-  padding-top: 184px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url(../img/icon_gift.svg);
+    width: 78px;
+    height: 80px;
+    top: -129px;
+    left: 30.5%;
+  }
 
   @media (min-width: @tablet-width) {
     width: 180px;
-    margin: auto auto auto 60%;
+    margin: auto auto auto 59.7%;
     text-align: left;
-    padding-top: 72px;
+
+    &::before {
+      top: -13px;
+      left: -344px
+    }
   }
 }
 
@@ -38,4 +53,10 @@
   width: 100%;
   height: 100%;
   cursor: pointer;
+  padding-top: 188px;
+  padding-bottom: 42px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 72px;
+  }
 }

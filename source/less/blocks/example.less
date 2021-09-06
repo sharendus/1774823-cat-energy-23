@@ -1,5 +1,6 @@
 .example__wrapper {
   background-color: @background-grey;
+  padding-bottom: 37px;
 
   @media (min-width: @desktop-width) {
     display: flex;
@@ -8,10 +9,12 @@
 
 .example__container {
   padding: 27px 6.25%;
+  padding-bottom: 0;
+  margin-bottom: 27px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 4%;
-    padding-top: 43px;
+    padding: 0 3.9%;
+    padding-top: 44px;
   }
 
   @media (min-width: @desktop-width) {
@@ -32,7 +35,7 @@
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 63px;
+    margin-bottom: 64px;
   }
 
   @media (min-width: @desktop-width) {
@@ -53,7 +56,7 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 50px;;
+    margin-bottom: 53px;;
   }
 
   @media (min-width: @desktop-width) {
@@ -87,13 +90,9 @@
   @media (min-width: @tablet-width){
     display: flex;
     flex-direction: column-reverse;
-    padding: 0 2%;
-    padding-top: 15px;
-    margin-right: 51px;
-
-    border: 1px solid @border-bottom-2;
+    border: 1px solid #CDCDCD;
     border-radius: 3px;
-    padding: 16px 20px;
+    padding: 14px 20px 19px;
     width: 22.88136%;
     text-align: center;
     margin-right: 5.9322%;
@@ -123,12 +122,15 @@
 
 
   @media (min-width: @tablet-width) {
-    margin: 0;
+    margin: 0 auto;
     font-size: 14px;
     line-height: 14px;
-    top: 63px;
-    left: 8px;
-    width: 140px;
+    top: 62px;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    max-width: 160px;
+    padding: 0px 9px;
   }
 }
 
@@ -145,7 +147,7 @@
   @media (min-width: @tablet-width) {
     margin: 0;
     font-size: 30px;
-    line-height: 37px;;
+    line-height: 37px;
   }
 }
 
@@ -173,7 +175,11 @@
   text-transform: uppercase;
   display: block;
   margin: 0 auto;
-  margin-right: 2px;
+  margin-right: 3px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -188,10 +194,60 @@
   }
 }
 
+.example__image-container {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
 .example__image {
   display: block;
+  margin-right: 9px;
 
   @media (min-width: @desktop-width) {
-
   }
+}
+
+.example__footer {
+  display: flex;
+  justify-content: center;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+}
+
+.example__label {
+  font-family: "Oswald","Arial",sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #111;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.slider {
+  position: relative;
+  width: 30%;
+  margin: 0 18px;
+}
+
+.slider__scale {
+  height: 14px;
+  border: 1px solid #cdcdcd;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 3px auto auto;
+}
+
+.slider__toggle {
+  transition: all .3s;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #68b738;
+    width: 35px;
+    height: 6px;
+    left: 5px;
+    top: 7px;
+    cursor: pointer;
 }
