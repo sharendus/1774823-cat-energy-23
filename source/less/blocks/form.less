@@ -12,29 +12,21 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 79px;
   }
 }
-
-/*.fieldset-container {
-  @media (min-width: @tablet-width) {
-    padding: 0 9%;
-    margin-bottom: 50px;
-  }
-
-  @media(min-width: @desktop-width) {
-    padding: 0 110px 0 40px;;
-  }
-} удалить */
 
 .fieldset-name {
   border-bottom: 1px solid @border-grey;
 
   @media (min-width: @tablet-width) {
     border-bottom: none;
+    margin-bottom: 50px;
   }
 
   @media(min-width: @desktop-width) {
-    padding: 0 6% 0 15%;
+    padding: 0;
+    padding-left: 16.5%;
     margin-bottom: 47px;
   }
 }
@@ -70,7 +62,7 @@
   }
 
   @media(min-width: @desktop-width) {
-    margin-right: 4%;
+    margin-right: 3%;
   }
 }
 
@@ -97,7 +89,17 @@
   border-bottom: 1px solid @border-grey;
 
   @media (min-width: @tablet-width) {
-    padding-top: 79px;
+    padding: 29px 0;
+    margin: 0 9%;
+    margin-bottom: 46px;
+    border: 1px solid @border-grey;
+  }
+
+  @media(min-width: @desktop-width) {
+    margin-left: 0;
+    margin-right: 110px;
+    margin-bottom: 68px;
+    padding: 30px 0;
   }
 }
 
@@ -123,11 +125,63 @@
   color: @special_dark-grey-2;
   text-transform: uppercase;
   padding-left: 46px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid @border-bottom-2;
+    top: -3px;
+    left: 0px;
+    cursor: pointer;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
     padding-left: 89px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+      top: -4px;
+      left: 30px;
+    }
+  }
+
+  @media(min-width: @desktop-width) {
+    padding-left: 87px;
+
+    &::before {
+      top: -5px;
+      left: 27px;
+    }
+  }
+}
+
+.fieldset-program__input:checked+.fieldset-program__label::after {
+  content: "";
+  position: absolute;
+  width: 13.5px;
+  height: 13.5px;
+  border-radius: 50%;
+  background-color: @basic_green;
+  top: 5px;
+  left: 8px;
+
+  @media (min-width: @tablet-width) {
+    width: 18px;
+    height: 18px;
+    top: 7px;
+    left: 41px;
+  }
+
+  @media(min-width: @desktop-width) {
+    top: 6px;
+    left: 38px;
   }
 }
 
@@ -149,10 +203,12 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 29px;
+    padding-bottom: 31px;
   }
 
   @media(min-width: @desktop-width) {
     padding: 0 7.6%;
+    padding-bottom: 31px;
   }
 }
 
@@ -180,6 +236,7 @@
 
 .fieldset-cocntacts__item {
   display: flex;
+  position: relative;
   align-items: center;
   font-family: @oswald-fnt;
   font-size: 16px;
@@ -201,7 +258,47 @@
 
   @media(min-width: @desktop-width) {
     width: 570px;
+    margin-bottom: 0;
   }
+}
+
+.fieldset-cocntacts__item--email::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 15px;
+  background-image: url(../../img/icon_email.svg);
+  right: 15px;
+  top: 16px;
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    top: 18px;
+  }
+
+  @media(min-width: @desktop-width) {
+    right: 17px;
+  }
+}
+
+.fieldset-cocntacts__item--tel::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../img/phone.svg);
+  right: 13px;
+  top: 13px;
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    right: 14px;
+    top: 16px;
+  }
+
+
 }
 
 .fieldset-cocntacts__label {
@@ -211,10 +308,6 @@
   @media (min-width: @tablet-width) {
     margin-right: 20px;
   }
-
-   @media(min-width: @desktop-width) {
-
-  }
 }
 
 .fieldset-cocntacts__input {
@@ -223,6 +316,7 @@
   width: 100%;
   height: 45px;
   padding-left: 15px;
+  position: relative;
 
   &::placeholder {
     color: @special_dark-grey;
@@ -257,6 +351,7 @@
   @media(min-width: @desktop-width) {
     padding: 0 7.6%;
     padding-top: 36px;
+    padding-bottom: 22px;
   }
 }
 
@@ -296,21 +391,22 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-top: 39px;
+    padding-top: 37px;
+    padding-bottom: 59px;
   }
 
   @media(min-width: @desktop-width) {
     padding: 0 7.6%;
     padding-top: 41px;
-    margin-bottom: 23px;
+    margin-bottom: 66px;
   }
 }
 
 .title__additionally {
-
+  padding-bottom: 5px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 58px;
+    margin-bottom: 57px;
   }
 }
 
@@ -330,7 +426,7 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 42px;
+    margin-bottom: 0;
   }
 }
 
@@ -343,21 +439,63 @@
 }
 
 .fieldset-additionally__wrapper {
-  padding-top: 5px;
-
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 9.5%;;
+    grid-column-gap: 9.3%;
+    grid-row-gap: 42px
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 6.36%;
   }
 }
 
 .fieldset-additionally__label {
   padding-left: 46px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid @border-bottom-2;
+    top: -5px;
+    left: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+      top: -5px;
+      left: 1px;
+    }
+  }
+}
+
+.fieldset-additionally__input:checked+.fieldset-additionally__label::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 9px;
+  border-left: 2.5px solid @basic_green;
+  border-bottom: 2.5px solid @basic_green;
+  top: 2px;
+  left: 7px;
+  transform: rotate(-45deg);
+
+  @media (min-width: @tablet-width) {
+    width: 23px;
+    height: 13px;
+    top: 5px;
+    left: 10px;
+  }
 }
 
 .form-button {
@@ -368,11 +506,12 @@
     @media (min-width: @tablet-width) {
       padding: 0 9.25%;
       display: flex;
-      margin-bottom: 51px;
+      margin-bottom: 50px;
     }
 
     @media (min-width: @desktop-width) {
       padding: 0 7.7%;
+      margin-bottom: 60px;
     }
   }
 

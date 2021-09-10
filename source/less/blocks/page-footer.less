@@ -1,3 +1,9 @@
+.page-footer {
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
 .page-footer__wrapper {
   background-color: @basic_grey;
   padding: 0 6.25%;
@@ -7,11 +13,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 43px 3.9%;
+    padding: 0 3.9%;
+    padding-bottom: 45px;
+    padding-top: 38px;
   }
 
   @media (min-width: @desktop-width) {
-
+    padding: 0 7.6%;
+    padding-bottom: 45px;
+    padding-top: 42px;
   }
 }
 
@@ -24,6 +34,17 @@
   @media (min-width: @tablet-width) {
     padding: 65px 9.25%;
     padding-bottom: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    width: 570px;
+    left: 110px;
+    top: 95px;
+    padding-top: 65px;
+    padding-bottom: 59px;
+    padding-left: 5.25%;
+    padding-right: 6%;
   }
 }
 
@@ -64,6 +85,10 @@
     width: 159px;
     text-align: right;
   }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
 }
 
 .page-footer__street {
@@ -75,7 +100,7 @@
 
 .page-footer__logo {
   display: block;
-  padding-top: 39px;
+  padding-top: 38px;
   padding-bottom: 27px;
   border-bottom: 1px solid #D9D9D9;
 
@@ -83,6 +108,8 @@
     padding: 0;
     margin: 0;
     border-bottom: none;
+    margin-right: 32px;
+    padding-top: 8px;
   }
 }
 
@@ -98,12 +125,11 @@
 
 .social__item {
   @media (min-width: @tablet-width) {
-    margin-right: 28px;
   }
 }
 
 .page-footer__social {
-  border-bottom: 1px solid #D9D9D9;
+  border-bottom: 1px solid @border-grey;
 
   @media (min-width: @tablet-width) {
     border-bottom: none;
@@ -111,9 +137,10 @@
 }
 
 .page-footer__copyright {
-  padding: 29px 0 22px;
+  padding: 21px 0 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -128,10 +155,15 @@
   font-weight: 400;
   color: @special_dark-grey;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 23px;
+  }
 }
 
 .copyiright__img {
-  text-align: center;
+  width: auto;
+  height: 34px;
 }
 
 .social__link {
@@ -142,7 +174,13 @@
   align-items: center;
 }
 
-
 .social__link:hover path {
   fill: @basic_green;
+}
+
+.social__img {
+  @media (min-width: @tablet-width) {
+    width: auto;
+    height: 23px;
+  }
 }

@@ -8,9 +8,17 @@
   margin: 34px 0 35px 0;
 
   @media (min-width: @tablet-width) {
+    background-image: url("../img/gift-photo-tablet.jpg");
     height: 200px;
     margin: 67px 0;
     margin-bottom: 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/gift-photo-desktop.jpg");
+    width: 245px;
+    min-height: 289px;
+    margin: 0;
   }
 }
 
@@ -46,6 +54,16 @@
       left: -344px
     }
   }
+
+  @media (min-width: @desktop-width) {
+    margin: auto auto auto 12.7%;
+    text-align: center;
+
+    &::before {
+      top: -129px;
+      left: 30.5%;
+    }
+  }
 }
 
 .gift__link {
@@ -58,5 +76,9 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 187px;
   }
 }
