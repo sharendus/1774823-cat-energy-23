@@ -28,13 +28,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url(../img/promo-cat-desktop.jpg);
+    background-image: url(../img/promo-cat-desktop.jpg), linear-gradient(90deg,@white-txt 50%,@basic_green 50%);
     background-position-x: 50vw, left;
     background-repeat: no-repeat;
     background-size: contain;
     height: 694px;
     margin-bottom: 82px;
-    margin-top: -122px;
+    margin-top: -114px;
   }
 }
 
@@ -49,7 +49,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 13.2%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 calc(110px + 80px);
   }
 
 }
