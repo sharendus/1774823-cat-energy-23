@@ -1,9 +1,11 @@
 .example {
+  background-color: @basic_grey;
+
   @media (min-width: @tablet-width) {
     background-image:  linear-gradient(@white-txt 57.3%,@basic_grey 57.3%);
   }
   @media (min-width: @desktop-width) {
-    background-image:  linear-gradient(@white-txt 25.5%,@basic_grey 25.5%);
+    background-image: linear-gradient(#ffffff 23.42%, #F2F2F2 23.42%);
   }
 
 }
@@ -19,7 +21,8 @@
   @media (min-width: @desktop-width) {
     display: flex;
     padding: 0 110px;
-    padding-bottom: 29px;
+    padding-bottom: 0;
+    padding-right: 70px;
     max-width: 1440px;
     margin: 0 auto;
   }
@@ -28,24 +31,27 @@
 .example__container {
   padding: 27px 6.25%;
   padding-bottom: 0;
-  margin-bottom: 27px;
+  margin-bottom: 42px;
 
   @media (min-width: @tablet-width) {
     padding: 0 3.9%;
     padding-top: 44px;
+    margin-bottom: 85px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0 7.65%;
     padding-top: 23px;
     padding-right: 0;
-    padding-left: 0;;
+    padding-left: 0;
+    margin-bottom: 56px;
   }
 }
 
 .example__before-after {
   @media (min-width: @desktop-width) {
-    margin-top: -89px;
+    margin-top: -31px;
+    width: 100%;
   }
 }
 
@@ -91,7 +97,7 @@
   }
 }
 
-.example__list {
+.example__listt {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
@@ -134,7 +140,9 @@
 .example__def-data {
   position: absolute;
   top: 46px;
-  left: 22px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
@@ -157,6 +165,11 @@
     width: fit-content;
     max-width: 160px;
     padding: 0px 9px;
+    background-color: @white-txt;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @basic_grey;
   }
 }
 
@@ -261,7 +274,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 27px;
+    margin-right: 41px;
   }
 }
 
@@ -345,4 +358,116 @@
         margin: auto;
       }
     }
+}
+
+.example__list {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	margin: 0 0 32px
+}
+
+.example__item {
+	display: none
+}
+
+.example__label {
+	font-family: "Oswald", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	color: #111;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: 400;
+	cursor: pointer
+}
+
+.example__toogle--after:checked~.example__list .example__item:nth-child(2),
+.example__toogle--before:checked~.example__list .example__item:nth-child(1) {
+	display: flex;
+  justify-content: center;
+}
+
+@media (min-width:768px) {
+
+	.example__list {
+		position: relative;
+		padding: 0;
+		width: 100%;
+		height: 518px;
+		list-style: none;
+		margin: 0 0 19px
+	}
+	.example__item {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-repeat: no-repeat
+	}
+	.example__item--before {
+		width: 50%;
+		z-index: 2;
+		background-image: url(../img/before-tablet@2x.png), linear-gradient(0deg, #f2f2f2 348px, #fff 348px);
+		background-repeat: no-repeat repeat;
+		background-size: auto 518px;
+		background-position-x: calc(28vw + 58%), right
+	}
+	.example__item--after {
+		z-index: 1;
+		background-image: url(../img/after-mobile@2x.png), linear-gradient(0deg, #f2f2f2 348px, #fff 348px);
+		background-size: auto 518px;
+		background-position-x: calc(61%)
+	}
+	.example__image {
+		display: none
+	}
+	.example__label {
+		font-size: 20px;
+		line-height: 20px;
+		border-bottom: 1px dotted #cdcdcd;
+		padding-bottom: 6px
+	}
+	.example__label:hover {
+		border-bottom: 1px solid #cdcdcd
+	}
+	.example__label:active {
+		border-bottom: none
+	}
+}
+
+@media (min-width:1300px) {
+	.example__list {
+		position: relative;
+		padding: 0;
+		width: 100%;
+		height: 518px;
+		list-style: none;
+		margin: 0 0 38px
+	}
+	.example__item {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-repeat: no-repeat
+	}
+	.example__item--after,
+	.example__item--before {
+		background-size: auto 518px;
+		background-position-x: 0
+	}
+	.example__item--before {
+		width: 53%;
+		background-repeat: no-repeat repeat;
+		z-index: 2;
+		background-image: url(../img/before-tablet@2x.png), linear-gradient(0deg, #f2f2f2 328px, #fff 328px)
+	}
+	.example__item--after {
+		z-index: 1;
+    background-position-x: 92px;
+		background-image: url(../img/after-mobile@2x.png), linear-gradient(0deg, #eaeaea 328px, #fff 328px)
+	}
 }
