@@ -1,14 +1,34 @@
 .example {
+
   background-color: @basic_grey;
 
   @media (min-width: @tablet-width) {
     background-image:  linear-gradient(@white-txt 57.3%,@basic_grey 57.3%);
   }
   @media (min-width: @desktop-width) {
-    background-image: linear-gradient(#ffffff 23.42%, #F2F2F2 23.42%);
+    position: relative;
+    background-color: transparent;
+    background-image: none;
+    //background-image: linear-gradient(#ffffff 159px, #F2F2F2 159px);
+
+    &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 159px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: linear-gradient(90deg,#f2f2f2 calc(50% + 326px),#eaeaea calc(50% + 326px));
+
+    }
   }
 
 }
+
+
 
 
 .example__wrapper {
@@ -21,7 +41,7 @@
   @media (min-width: @desktop-width) {
     display: flex;
     padding: 0 110px;
-    padding-bottom: 0;
+    padding-bottom: 29px;
     padding-right: 70px;
     max-width: 1440px;
     margin: 0 auto;
@@ -44,7 +64,7 @@
     padding-top: 23px;
     padding-right: 0;
     padding-left: 0;
-    margin-bottom: 56px;
+    margin-bottom: 27px;
   }
 }
 
