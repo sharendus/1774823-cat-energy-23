@@ -11,8 +11,12 @@
     "gulp-less": "4.0.1",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.0",
+    "gulp-rename": "^2.0.0",
     "gulp-sourcemaps": "3.0.0",
+    "gulp-squoosh": "^0.8.0",
+    "gulp-terser": "^2.0.1",
     "postcss": "^8.3.6",
+    "postcss-csso": "^5.0.1",
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.10"
   },
