@@ -23,6 +23,17 @@ const styles = () => {
 
 exports.styles = styles;
 
+// HTML
+
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("source"));
+}
+
+exports.html = html;
+
+
 // Server
 
 const server = (done) => {
