@@ -1,5 +1,4 @@
 .example {
-
   background-color: @basic_grey;
 
   @media (min-width: @tablet-width) {
@@ -9,7 +8,7 @@
     position: relative;
     background-color: transparent;
     background-image: none;
-    background-image: linear-gradient(#ffffff 159px, #F2F2F2 159px);
+    //background-image: linear-gradient(#ffffff 159px, #F2F2F2 159px);
 
     &::before {
     content: "";
@@ -25,7 +24,6 @@
 
     }
   }
-
 }
 
 .example__wrapper {
@@ -313,70 +311,6 @@
     }
 }
 
-.slider {
-  position: relative;
-  width: 30%;
-  margin: 0 18px;
-
-  @media (min-width: @tablet-width) {
-    margin: 0;
-    width: 428px;
-  }
-}
-
-.slider__scale {
-  height: 14px;
-  border: 1px solid #cdcdcd;
-  background-color: #fff;
-  border-radius: 5px;
-  margin: 3px auto auto;
-
-  @media (min-width: @tablet-width) {
-    border: 0;
-    height: 6px;
-    background-color: #dcdcdc;
-    border-radius: 3px;
-    margin: 9px auto auto;
-  }
-}
-
-.slider__toggle {
-  transition: all .3s;
-    position: absolute;
-    border-radius: 5px;
-    background-color: @basic_green;
-    width: 35px;
-    height: 6px;
-    left: 5px;
-    top: 7px;
-    cursor: pointer;
-
-    @media (min-width: @tablet-width) {
-      border-radius: 50%;
-      border: 1px solid @border-bottom-2;
-      background-color: @white-txt;
-      width: 34px;
-      height: 34px;
-      left: 198px;
-      top: -6px;
-      cursor: pointer;
-
-      &::before{
-        content: "";
-        position: absolute;
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background-color: @basic_green;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-      }
-    }
-}
-
 .example__list {
 	list-style: none;
 	text-align: center;
@@ -384,8 +318,13 @@
 	margin: 0 0 32px
 }
 
-.example__item {
+.example__item--after {
 	display: none
+}
+
+.example__item--before {
+  display: flex;
+  justify-content: center;
 }
 
 .example__label {
@@ -397,12 +336,6 @@
 	text-transform: uppercase;
 	font-weight: 400;
 	cursor: pointer
-}
-
-.example__toogle--after:checked~.example__list .example__item:nth-child(2),
-.example__toogle--before:checked~.example__list .example__item:nth-child(1) {
-	display: flex;
-  justify-content: center;
 }
 
 @media (min-width:@tablet-width) {

@@ -7,6 +7,7 @@
   font-weight: 500;
   text-transform: uppercase;
   margin: 0;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -37,6 +38,27 @@
     border-bottom: none;
   }
 }
+
+.js .main-nav__wrapper {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  background-color: @white-txt;
+  z-index: 999;
+}
+
+@media(min-width: @tablet-width) {
+  .js .main-nav__wrapper {
+    position: static;
+    top: auto;
+    left: auto;
+    width: auto;
+    background-color: transparent;
+    z-index: 0;
+  }
+}
+
 
 .main-nav__logo {
   display: flex;

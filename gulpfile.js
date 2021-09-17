@@ -120,11 +120,18 @@ const clean = () => {
   return del("build");
 };
 
+// Reload
+
+const reload = (done) => {
+  sync.reload();
+  done();
+}
+
 // Watcher
 
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/*.html", gulp.series(html, reload));
   gulp.watch("source/js/script.js", gulp.series(scripts));
 }
 
