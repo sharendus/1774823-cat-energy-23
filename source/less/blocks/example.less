@@ -8,7 +8,6 @@
     position: relative;
     background-color: transparent;
     background-image: none;
-    //background-image: linear-gradient(#ffffff 159px, #F2F2F2 159px);
 
     &::before {
     content: "";
@@ -20,7 +19,7 @@
     left: 0;
     right: 0;
     z-index: -1;
-    background-image: linear-gradient(90deg,#f2f2f2 calc(50% + 326px),#eaeaea calc(50% + 326px));
+    background-image: linear-gradient(90deg,@basic_grey calc(50% + 326px),@background-grey calc(50% + 326px));
 
     }
   }
@@ -137,7 +136,7 @@
   @media (min-width: @tablet-width){
     display: flex;
     flex-direction: column-reverse;
-    border: 1px solid #CDCDCD;
+    border: 1px solid @border-bottom-2;
     border-radius: 3px;
     padding: 14px 20px 19px;
     width: 22.88136%;
@@ -297,7 +296,7 @@
   font-family: "Oswald","Arial",sans-serif;
     font-size: 16px;
     line-height: 20px;
-    color: #111;
+    color: @black-txt;
     margin: 0;
     text-transform: uppercase;
     font-weight: 400;
@@ -306,7 +305,7 @@
     @media (min-width: @tablet-width) {
       font-size: 20px;
       line-height: 20px;
-      border-bottom: 1px dotted #cdcdcd;
+      border-bottom: 1px dotted @border-bottom-2;
       padding-bottom: 6px;
     }
 }
@@ -331,7 +330,7 @@
 	font-family: "Oswald", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 20px;
-	color: #111;
+	color: @black-txt;
 	margin: 0;
 	text-transform: uppercase;
 	font-weight: 400;
@@ -359,14 +358,14 @@
 	.example__item--before {
 		width: 50%;
 		z-index: 2;
-		background-image: url(../img/before-tablet@2x.png), linear-gradient(0deg, #f2f2f2 348px, #fff 348px);
+		background-image: url(../img/before-tablet@2x.png), linear-gradient(0deg, @basic_grey 348px, @white-txt 348px);
 		background-repeat: no-repeat repeat;
 		background-size: auto 518px;
 		background-position-x: calc(28vw + 58%), right
 	}
 	.example__item--after {
 		z-index: 1;
-		background-image: url(../img/after-mobile@2x.png), linear-gradient(0deg, #f2f2f2 348px, #fff 348px);
+		background-image: url(../img/after-mobile@2x.png), linear-gradient(0deg, @basic_grey 348px, @white-txt 348px);
 		background-size: auto 518px;
 		background-position-x: calc(61%)
 	}
@@ -376,11 +375,11 @@
 	.example__label {
 		font-size: 20px;
 		line-height: 20px;
-		border-bottom: 1px dotted #cdcdcd;
+		border-bottom: 1px dotted @border-bottom-2;
 		padding-bottom: 6px
 	}
 	.example__label:hover {
-		border-bottom: 1px solid #cdcdcd
+		border-bottom: 1px solid @border-bottom-2;
 	}
 	.example__label:active {
 		border-bottom: none
@@ -413,11 +412,11 @@
 		width: 53%;
 		background-repeat: no-repeat repeat;
 		z-index: 2;
-		background-image: url(../img/before-tablet@2x.png), linear-gradient(0deg, #f2f2f2 328px, #fff 328px)
+		background-image: url(../img/before-tablet@2x.png), linear-gradient(0deg, @basic_grey 328px, @white-txt 328px)
 	}
 	.example__item--after {
 		z-index: 1;
     background-position-x: 92px;
-		background-image: url(../img/after-mobile@2x.png), linear-gradient(0deg, #eaeaea 328px, #fff 328px)
+		background-image: url(../img/after-mobile@2x.png), linear-gradient(0deg, @background-grey 328px, @white-txt 328px)
 	}
 }
