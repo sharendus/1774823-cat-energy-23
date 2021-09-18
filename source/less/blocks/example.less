@@ -1,5 +1,4 @@
 .example {
-
   background-color: @basic_grey;
 
   @media (min-width: @tablet-width) {
@@ -9,7 +8,6 @@
     position: relative;
     background-color: transparent;
     background-image: none;
-    //background-image: linear-gradient(#ffffff 159px, #F2F2F2 159px);
 
     &::before {
     content: "";
@@ -25,11 +23,7 @@
 
     }
   }
-
 }
-
-
-
 
 .example__wrapper {
   padding-bottom: 37px;
@@ -387,8 +381,13 @@
 	margin: 0 0 32px
 }
 
-.example__item {
+.example__item--after {
 	display: none
+}
+
+.example__item--before {
+  display: flex;
+  justify-content: center;
 }
 
 .example__label {
@@ -400,12 +399,6 @@
 	text-transform: uppercase;
 	font-weight: 400;
 	cursor: pointer
-}
-
-.example__toogle--after:checked~.example__list .example__item:nth-child(2),
-.example__toogle--before:checked~.example__list .example__item:nth-child(1) {
-	display: flex;
-  justify-content: center;
 }
 
 @media (min-width:@tablet-width) {

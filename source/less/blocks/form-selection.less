@@ -13,6 +13,17 @@
   }
 }
 
+.form-fieldset-wrapper  {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 79px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 110px;
+  }
+}
+
 .form-selection__title {
   font-family: @oswald-fnt;
   font-size: 36px;
