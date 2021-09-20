@@ -4,8 +4,8 @@
   margin: 0 18px;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
-    width: 428px;
+      margin: 0;
+      width: 428px;
   }
 }
 
@@ -17,26 +17,35 @@
   margin: 3px auto auto;
 
   @media (min-width: @tablet-width) {
-    border: 0;
-    height: 6px;
-    background-color: #dcdcdc;
-    border-radius: 3px;
-    margin: 9px auto auto;
+      border: 0;
+      height: 6px;
+      background-color: #dcdcdc;
+      border-radius: 3px;
+      margin: 9px auto auto;
   }
 }
 
 .slider__toggle {
-  transition: all .3s;
-    position: absolute;
-    border-radius: 5px;
-    background-color: @basic_green;
-    width: 35px;
-    height: 6px;
-    left: 5px;
-    top: 7px;
-    cursor: pointer;
+  position: absolute;
+  border-radius: 5px;
+  background-color: @basic_green;
+  width: 35px;
+  height: 6px;
+  left: 5px;
+  top: 7px;
+  cursor: pointer;
+  box-shadow: 0px 1px 3px @default-toggle;
 
-    @media (min-width: @tablet-width) {
+  &:hover {
+      box-shadow: 0px 2px 4px @hover-toggle;
+  }
+
+  &:active {
+      box-shadow: 0px 3px 5px @active-toggle;
+      border-color: @basic_green;
+  }
+
+  @media (min-width: @tablet-width) {
       border-radius: 50%;
       border: 1px solid @border-bottom-2;
       background-color: @white-txt;
@@ -46,18 +55,18 @@
       top: -6px;
       cursor: pointer;
 
-      &::before{
-        content: "";
-        position: absolute;
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background-color: @basic_green;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
+      &::before {
+          content: "";
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: @basic_green;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
       }
-    }
+  }
 }

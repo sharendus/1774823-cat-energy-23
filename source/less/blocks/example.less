@@ -2,26 +2,25 @@
   background-color: @basic_grey;
 
   @media (min-width: @tablet-width) {
-    background-image:  linear-gradient(@white-txt 57.3%,@basic_grey 57.3%);
+      background-image: linear-gradient(@white-txt 57.3%, @basic_grey 57.3%);
   }
   @media (min-width: @desktop-width) {
-    position: relative;
-    background-color: transparent;
-    background-image: none;
+      position: relative;
+      background-color: transparent;
+      background-image: none;
 
-    &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    top: 159px;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    background-image: linear-gradient(90deg,@basic_grey calc(50% + 326px),@background-grey calc(50% + 326px));
-
-    }
+      &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          height: 100%;
+          width: 100%;
+          top: 159px;
+          left: 0;
+          right: 0;
+          z-index: -1;
+          background-image: linear-gradient(90deg, @basic_grey calc(50% + 326px), @background-grey calc(50% + 326px));
+      }
   }
 }
 
@@ -29,16 +28,16 @@
   padding-bottom: 37px;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 68px;
+      padding-bottom: 68px;
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    padding: 0 110px;
-    padding-bottom: 29px;
-    padding-right: 70px;
-    max-width: 1440px;
-    margin: 0 auto;
+      display: flex;
+      padding: 0 110px;
+      padding-bottom: 29px;
+      padding-right: 70px;
+      max-width: 1440px;
+      margin: 0 auto;
   }
 }
 
@@ -48,24 +47,24 @@
   margin-bottom: 42px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 3.9%;
-    padding-top: 44px;
-    margin-bottom: 85px;
+      padding: 0 3.9%;
+      padding-top: 44px;
+      margin-bottom: 85px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 7.65%;
-    padding-top: 23px;
-    padding-right: 0;
-    padding-left: 0;
-    margin-bottom: 27px;
+      padding: 0 7.65%;
+      padding-top: 23px;
+      padding-right: 0;
+      padding-left: 0;
+      margin-bottom: 27px;
   }
 }
 
 .example__before-after {
   @media (min-width: @desktop-width) {
-    margin-top: -31px;
-    width: 100%;
+      margin-top: -31px;
+      width: 100%;
   }
 }
 
@@ -79,13 +78,13 @@
   margin-bottom: 33px;
 
   @media (min-width: @tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
-    margin-bottom: 64px;
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 64px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 147px;
+      margin-bottom: 147px;
   }
 }
 
@@ -100,14 +99,14 @@
   margin-bottom: 25px;
 
   @media (min-width: @tablet-width) {
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 53px;;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 53px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 436px;
-    margin-bottom: 67px;
+      width: 436px;
+      margin-bottom: 67px;
   }
 }
 
@@ -119,8 +118,8 @@
   margin-bottom: 14px;
 
   @media (min-width: @desktop-width) {
-    justify-content: flex-start;
-    width: 570px;
+      justify-content: flex-start;
+      width: 570px;
   }
 }
 
@@ -133,21 +132,21 @@
   width: 44%;
   text-align: center;
 
-  @media (min-width: @tablet-width){
-    display: flex;
-    flex-direction: column-reverse;
-    border: 1px solid @border-bottom-2;
-    border-radius: 3px;
-    padding: 14px 20px 19px;
-    width: 22.88136%;
-    text-align: center;
-    margin-right: 5.9322%;
+  @media (min-width: @tablet-width) {
+      display: flex;
+      flex-direction: column-reverse;
+      border: 1px solid @border-bottom-2;
+      border-radius: 3px;
+      padding: 14px 20px 19px;
+      width: 22.88136%;
+      text-align: center;
+      margin-right: 5.9322%;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 58px;
-    margin-right: 42px;
-    width: 162px;
+      margin-bottom: 58px;
+      margin-right: 42px;
+      width: 162px;
   }
 }
 
@@ -168,22 +167,21 @@
   width: 77px;
   background-color: @basic_grey;
 
-
   @media (min-width: @tablet-width) {
-    margin: 0 auto;
-    font-size: 14px;
-    line-height: 14px;
-    top: 62px;
-    left: 0;
-    right: 0;
-    width: fit-content;
-    max-width: 160px;
-    padding: 0px 9px;
-    background-color: @white-txt;
+      margin: 0 auto;
+      font-size: 14px;
+      line-height: 14px;
+      top: 62px;
+      left: 0;
+      right: 0;
+      width: fit-content;
+      max-width: 160px;
+      padding: 0px 9px;
+      background-color: @white-txt;
   }
 
   @media (min-width: @desktop-width) {
-    background-color: @basic_grey;
+      background-color: @basic_grey;
   }
 }
 
@@ -198,9 +196,9 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
-    font-size: 30px;
-    line-height: 37px;
+      margin: 0;
+      font-size: 30px;
+      line-height: 37px;
   }
 }
 
@@ -208,14 +206,14 @@
   display: flex;
   margin: 34px auto auto;
 
-  @media(min-width: @tablet-width) {
-    flex-direction: column;
-    margin: auto 0 auto auto;
+  @media (min-width: @tablet-width) {
+      flex-direction: column;
+      margin: auto 0 auto auto;
   }
 
   @media (min-width: @desktop-width) {
-    flex-direction: row;
-    margin: 0;
+      flex-direction: row;
+      margin: 0;
   }
 }
 
@@ -231,19 +229,19 @@
   margin-right: 3px;
 
   &:last-child {
-    margin-right: 0;
+      margin-right: 0;
   }
 
   @media (min-width: @tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
-    margin: auto 0 auto auto;
-    margin-bottom: 4px;
-    margin-top: 4px;
+      font-size: 20px;
+      line-height: 20px;
+      margin: auto 0 auto auto;
+      margin-bottom: 4px;
+      margin-top: 4px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 64px;
+      margin-right: 64px;
   }
 }
 
@@ -254,12 +252,12 @@
   margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 56px;
-    margin-bottom: 19px;
+      padding-top: 56px;
+      margin-bottom: 19px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 39px;
+      margin-bottom: 39px;
   }
 }
 
@@ -268,8 +266,8 @@
   margin-right: 9px;
 
   @media (min-width: @tablet-width) {
-    width: auto;
-    margin-right: 0;
+      width: auto;
+      margin-right: 0;
   }
 }
 
@@ -279,46 +277,46 @@
   padding-left: 6.25%;
   padding-right: 6.25%;
 
-  @media (min-width: @tablet-width)  {
-    width: 570px;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-    justify-content: space-between;
+  @media (min-width: @tablet-width) {
+      width: 570px;
+      margin: 0 auto;
+      padding-left: 0;
+      padding-right: 0;
+      justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 41px;
+      margin-right: 41px;
   }
 }
 
 .example__label {
-  font-family: "Oswald","Arial",sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    color: @black-txt;
-    margin: 0;
-    text-transform: uppercase;
-    font-weight: 400;
-    cursor: pointer;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: @black-txt;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: pointer;
 
-    @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
       font-size: 20px;
       line-height: 20px;
       border-bottom: 1px dotted @border-bottom-2;
       padding-bottom: 6px;
-    }
+  }
 }
 
 .example__list {
-	list-style: none;
-	text-align: center;
-	padding: 0;
-	margin: 0 0 32px
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0 0 32px;
 }
 
 .example__item--after {
-	display: none
+  display: none;
 }
 
 .example__item--before {
@@ -327,96 +325,95 @@
 }
 
 .example__label {
-	font-family: "Oswald", "Arial", sans-serif;
-	font-size: 16px;
-	line-height: 20px;
-	color: @black-txt;
-	margin: 0;
-	text-transform: uppercase;
-	font-weight: 400;
-	cursor: pointer
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: @black-txt;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: pointer;
 }
 
-@media (min-width:@tablet-width) {
-
-	.example__list {
-		position: relative;
-		padding: 0;
-		width: 100%;
-		height: 518px;
-		list-style: none;
-		margin: 0 0 19px
-	}
-	.example__item {
-		display: block;
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background-size: cover;
-		background-repeat: no-repeat
-	}
-	.example__item--before {
-		width: 50%;
-		z-index: 2;
-		background-image: url(../img/before-tablet@2x.png), linear-gradient(0deg, @basic_grey 348px, @white-txt 348px);
-		background-repeat: no-repeat repeat;
-		background-size: auto 518px;
-		background-position-x: calc(28vw + 58%), right
-	}
-	.example__item--after {
-		z-index: 1;
-		background-image: url(../img/after-mobile@2x.png), linear-gradient(0deg, @basic_grey 348px, @white-txt 348px);
-		background-size: auto 518px;
-		background-position-x: calc(61%)
-	}
-	.example__image {
-		display: none
-	}
-	.example__label {
-		font-size: 20px;
-		line-height: 20px;
-		border-bottom: 1px dotted @border-bottom-2;
-		padding-bottom: 6px
-	}
-	.example__label:hover {
-		border-bottom: 1px solid @border-bottom-2
-	}
-	.example__label:active {
-		border-bottom: none
-	}
+@media (min-width: @tablet-width) {
+  .example__list {
+      position: relative;
+      padding: 0;
+      width: 100%;
+      height: 518px;
+      list-style: none;
+      margin: 0 0 19px;
+  }
+  .example__item {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  .example__item--before {
+      width: 50%;
+      z-index: 2;
+      background-image: url(../img/before-tablet@2x.png), linear-gradient(0deg, @basic_grey 348px, @white-txt 348px);
+      background-repeat: no-repeat repeat;
+      background-size: auto 518px;
+      background-position-x: calc(28vw + 58%), right;
+  }
+  .example__item--after {
+      z-index: 1;
+      background-image: url(../img/after-mobile@2x.png), linear-gradient(0deg, @basic_grey 348px, @white-txt 348px);
+      background-size: auto 518px;
+      background-position-x: calc(61%);
+  }
+  .example__image {
+      display: none;
+  }
+  .example__label {
+      font-size: 20px;
+      line-height: 20px;
+      border-bottom: 1px dotted @border-bottom-2;
+      padding-bottom: 6px;
+  }
+  .example__label:hover {
+      border-bottom: 1px solid @border-bottom-2;
+  }
+  .example__label:active {
+      border-bottom: none;
+  }
 }
 
-@media (min-width:@desktop-width) {
-	.example__list {
-		position: relative;
-		padding: 0;
-		width: 100%;
-		height: 518px;
-		list-style: none;
-		margin: 0 0 38px
-	}
-	.example__item {
-		display: block;
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background-size: cover;
-		background-repeat: no-repeat
-	}
-	.example__item--after,
-	.example__item--before {
-		background-size: auto 518px;
-		background-position-x: 0
-	}
-	.example__item--before {
-		width: 53%;
-		background-repeat: no-repeat repeat;
-		z-index: 2;
-		background-image: url(../img/before-tablet@2x.png), linear-gradient(0deg, @basic_grey 328px, @white-txt 328px)
-	}
-	.example__item--after {
-		z-index: 1;
-    background-position-x: 92px;
-		background-image: url(../img/after-mobile@2x.png), linear-gradient(0deg, @background-grey 328px, @white-txt 328px)
-	}
+@media (min-width: @desktop-width) {
+  .example__list {
+      position: relative;
+      padding: 0;
+      width: 100%;
+      height: 518px;
+      list-style: none;
+      margin: 0 0 38px;
+  }
+  .example__item {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  .example__item--after,
+  .example__item--before {
+      background-size: auto 518px;
+      background-position-x: 0;
+  }
+  .example__item--before {
+      width: 53%;
+      background-repeat: no-repeat repeat;
+      z-index: 2;
+      background-image: url(../img/before-tablet@2x.png), linear-gradient(0deg, @basic_grey 328px, @white-txt 328px);
+  }
+  .example__item--after {
+      z-index: 1;
+      background-position-x: 92px;
+      background-image: url(../img/after-mobile@2x.png), linear-gradient(0deg, @background-grey 328px, @white-txt 328px);
+  }
 }

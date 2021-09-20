@@ -1,0 +1,114 @@
+.fieldset-program {
+  padding-top: 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid @border-grey;
+
+  @media (min-width: @tablet-width) {
+      padding: 29px 0;
+      margin: 0 9%;
+      margin-bottom: 46px;
+      border: 1px solid @border-grey;
+  }
+
+  @media (min-width: @desktop-width) {
+      margin-left: 0;
+      margin-right: 0px;
+      margin-bottom: 69px;
+      padding: 29px 0;
+  }
+}
+
+.fieldset-program__item {
+  display: block;
+  font-family: @oswald-fnt;
+  margin-bottom: 25px;
+
+  &:last-child {
+      margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+      margin-bottom: 23px;
+  }
+}
+
+.fieldset-program__label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: @special_dark-grey-2;
+  text-transform: uppercase;
+  padding-left: 46px;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid @border-bottom-2;
+      top: -3px;
+      left: 0px;
+      cursor: pointer;
+  }
+
+  &:hover::before {
+      border-color: @radio-hover;
+  }
+
+  &:disabled::before {
+      border-color: @activ-green;
+  }
+
+  @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+      padding-left: 89px;
+
+      &::before {
+          width: 40px;
+          height: 40px;
+          top: -4px;
+          left: 30px;
+      }
+  }
+
+  @media (min-width: @desktop-width) {
+      padding-left: 87px;
+
+      &::before {
+          top: -5px;
+          left: 27px;
+      }
+  }
+}
+
+.fieldset-program__input:checked + .fieldset-program__label::after {
+  content: "";
+  position: absolute;
+  width: 13.5px;
+  height: 13.5px;
+  border-radius: 50%;
+  background-color: @basic_green;
+  top: 5px;
+  left: 8px;
+
+  @media (min-width: @tablet-width) {
+      width: 18px;
+      height: 18px;
+      top: 7px;
+      left: 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+      top: 6px;
+      left: 38px;
+  }
+}
+
+.fieldset-program__input:disabled + .fieldset-program__label {
+  opacity: 0.3;
+}
+

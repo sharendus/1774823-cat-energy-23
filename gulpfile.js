@@ -37,7 +37,8 @@ exports.styles = styles;
 const html = () => {
   return gulp.src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("build"))
+    .pipe(sync.stream());
 }
 
 exports.html = html;
@@ -87,7 +88,7 @@ exports.createWebp = createWebp;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -132,7 +133,9 @@ const reload = (done) => {
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series("styles"));
   gulp.watch("source/*.html", gulp.series(html, reload));
+  //gulp.watch("source/*.html").on("change", sync.reload);
   gulp.watch("source/js/script.js", gulp.series(scripts));
+
 }
 
 // Build

@@ -4,19 +4,18 @@
   padding-bottom: 42px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 3.9%;
-    padding-top: 45px;
-    margin-bottom: 58px;
+      padding: 0 3.9%;
+      padding-top: 45px;
+      margin-bottom: 58px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 110px;
-    padding-top: 71px;
-    max-width: 1440px;
-    margin: 0 auto;
-    margin-bottom: 58px;
+      padding: 0 110px;
+      padding-top: 71px;
+      max-width: 1440px;
+      margin: 0 auto;
+      margin-bottom: 58px;
   }
-
 }
 
 .how-it-works__title {
@@ -29,10 +28,10 @@
   margin-bottom: 38px;
 
   @media (min-width: @tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
-    margin: 0;
-    margin-bottom: 72px;
+      font-size: 60px;
+      line-height: 60px;
+      margin: 0;
+      margin-bottom: 72px;
   }
 }
 
@@ -42,18 +41,18 @@
   counter-reset: list1;
 
   @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 8.4%;
-    row-gap: 89px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 8.4%;
+      row-gap: 89px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   @media (min-width: @desktop-width) {
-    column-gap: 6.5%;
+      column-gap: 6.5%;
   }
 }
 
@@ -71,62 +70,62 @@
   position: relative;
 
   &:last-child {
-    margin-bottom: 0;
+      margin-bottom: 0;
   }
 
   @media (min-width: @tablet-width) {
-    font-size: 16px;
-    line-height: 24px;
-    width: 245px;
-    margin: 0;
-    padding-top: 112px;
-    padding-bottom: 44px;
-    padding-left: 0;
-    counter-increment: list1;
+      font-size: 16px;
+      line-height: 24px;
+      width: 245px;
+      margin: 0;
+      padding-top: 112px;
+      padding-bottom: 44px;
+      padding-left: 0;
+      counter-increment: list1;
 
-    &::before {
-      content: "";
-      display: block;
-      width: 80px;
-      height: 80px;
-      background-color: @basic_green;
-      position: absolute;
-      top: 0px;
-    }
+      &::before {
+          content: "";
+          display: block;
+          width: 80px;
+          height: 80px;
+          background-color: @basic_green;
+          position: absolute;
+          top: 0px;
+      }
 
-    &::after {
-      content: counter(list1);
-      position: absolute;
-      top: -39px;
-      left: 55px;
-      width: 100%;
-      text-align: center;
-      font-family: "Oswald","Arial",sans-serif;
-      font-size: 280px;
-      line-height: 280px;
-      color: #f2f2f2;
-      z-index: -1;
-    }
+      &::after {
+          content: counter(list1);
+          position: absolute;
+          top: -39px;
+          left: 55px;
+          width: 100%;
+          text-align: center;
+          font-family: "Oswald", "Arial", sans-serif;
+          font-size: 280px;
+          line-height: 280px;
+          color: #f2f2f2;
+          z-index: -1;
+      }
   }
 }
 
 .how-it-works__item--leaf::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background-color: @basic_green;
-    top: 0px;
-    left: 0;
-    background-image: url(../../img/Vector-index-leaf.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: @basic_green;
+  top: 0px;
+  left: 0;
+  background-image: url(../../img/Vector-index-leaf.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 
-    @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
       width: 80px;
       height: 80px;
-    }
+  }
 }
 
 .how-it-works__item--powder::before {
@@ -143,8 +142,8 @@
   background-position: center;
 
   @media (min-width: @tablet-width) {
-    width: 80px;
-    height: 80px;
+      width: 80px;
+      height: 80px;
   }
 }
 
@@ -162,8 +161,8 @@
   background-position: center;
 
   @media (min-width: @tablet-width) {
-    width: 80px;
-    height: 80px;
+      width: 80px;
+      height: 80px;
   }
 }
 
@@ -181,11 +180,7 @@
   background-position: center;
 
   @media (min-width: @tablet-width) {
-    width: 80px;
-    height: 80px;
+      width: 80px;
+      height: 80px;
   }
 }
-
-
-
-

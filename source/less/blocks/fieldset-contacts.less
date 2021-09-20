@@ -1,0 +1,216 @@
+.fieldset-contacts {
+  position: relative;
+  padding-top: 26px;
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &::before {
+      content: "";
+      width: 100%;
+      height: 1px;
+      border: 1px solid @basic_green;
+      color: @basic_green;
+      position: absolute;
+      top: 42px;
+      left: 6.25%;
+      z-index: -1;
+  }
+
+  @media (min-width: @tablet-width) {
+      padding: 0 3.9%;
+      padding-top: 29px;
+      padding-bottom: 31px;
+
+      &::before {
+          top: 51px;
+          left: 0;
+      }
+  }
+
+  @media (min-width: @desktop-width) {
+      padding: 0;
+      padding-bottom: 31px;
+
+      &::before {
+          top: 22px;
+      }
+  }
+}
+
+.fieldset-contacts__wrapper {
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+      padding: 0 5.3%;
+  }
+
+  @media (min-width: @desktop-width) {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 110px;
+  }
+}
+
+.fieldset-contacts__title,
+.fieldset-comment__title,
+.fieldset-additionally__title {
+  font-family: @oswald-fnt;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 35px;
+  background-color: @white-txt;
+  padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+      padding: 0 5.5%;
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+      margin-left: calc((100% - 1300px) / 2);
+      margin-right: auto;
+      padding-left: 40px;
+      padding-right: 40px;
+  }
+}
+
+.fieldset-contacts__title br {
+  @media (min-width: @tablet-width) {
+      display: none;
+  }
+}
+
+.fieldset-contacts__item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  font-family: @oswald-fnt;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: @special_dark-grey;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+
+  &:last-child {
+      margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+      width: 570px;
+      margin-bottom: 0;
+  }
+}
+
+.fieldset-contacts__img--email {
+  position: absolute;
+  top: 18px;
+  right: 16px;
+  display: block;
+  width: 18px;
+  height: auto;
+  pointer-events: none;
+
+  @media (min-width: @tablet-width) {
+      top: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+      right: 18px;
+  }
+}
+
+.fieldset-contacts__img--tel {
+  position: absolute;
+  top: 18px;
+  right: 16px;
+  display: block;
+  width: 18px;
+  height: auto;
+  pointer-events: none;
+
+  @media (min-width: @tablet-width) {
+      top: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+      right: 18px;
+  }
+}
+
+.fieldset-contacts__label {
+  flex-shrink: 0;
+  margin-right: 9px;
+
+  @media (min-width: @tablet-width) {
+      margin-right: 20px;
+  }
+}
+
+.fieldset-contacts__input {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 45px;
+  padding-left: 15px;
+  position: relative;
+  border: 1px solid @border-bottom-3;
+
+  &:hover {
+      border-color: @border-bottom-2;
+  }
+
+  &:focus {
+      padding: 0 14px;
+      border: 2px solid @special_dark-grey;
+  }
+
+  &:invalid {
+      padding: 0 14px;
+      border: 2px solid @error_red;
+  }
+
+  &::placeholder {
+      color: @special_dark-grey;
+      text-transform: uppercase;
+  }
+
+  @media (min-width: @tablet-width) {
+      height: 52px;
+      padding-left: 20px;
+
+      &:focus {
+          padding: 0 19px;
+      }
+
+      &:invalid {
+          padding: 0 19px;
+      }
+  }
+}
+
+.fieldset-contacts__input--email:active,
+.fieldset-contacts__input--email:focus + .fieldset-contacts__img--email,
+.fieldset-contacts__input--tel:active,
+.fieldset-contacts__input--tel:focus + .fieldset-contacts__img--tel {
+  fill: @basic_green;
+}
+
+.fieldset-contacts__input--email:invalid + .fieldset-contacts__img--email,
+.fieldset-contacts__input--tel:invalid + .fieldset-contacts__img--tel {
+  fill: @error_red;
+}

@@ -2,7 +2,7 @@
   background-color: @basic_grey;
 
   @media (min-width: @desktop-width) {
-    position: relative;
+      position: relative;
   }
 }
 
@@ -11,30 +11,30 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 3.9%;
-    padding-bottom: 45px;
-    padding-top: 38px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 3.9%;
+      padding-bottom: 45px;
+      padding-top: 38px;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 1440px;
-    padding: 0 110px;
-    padding-bottom: 45px;
-    padding-top: 42px;
-    max-width: 1440px;
-    margin: 0 auto;
+      max-width: 1440px;
+      padding: 0 110px;
+      padding-bottom: 45px;
+      padding-top: 42px;
+      max-width: 1440px;
+      margin: 0 auto;
   }
 }
 
 .page-footer__contacts-wrapper {
   @media (min-width: @desktop-width) {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 110px;
-    position: relative;
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 110px;
+      position: relative;
   }
 }
 
@@ -45,19 +45,19 @@
   background-color: @white-txt;
 
   @media (min-width: @tablet-width) {
-    padding: 65px 9.25%;
-    padding-bottom: 60px;
+      padding: 65px 9.25%;
+      padding-bottom: 60px;
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    width: 570px;
-    left: 110px;
-    top: 95px;
-    padding-top: 65px;
-    padding-bottom: 59px;
-    padding-left: 5.25%;
-    padding-right: 6%;
+      position: absolute;
+      width: 570px;
+      left: 110px;
+      top: 95px;
+      padding-top: 65px;
+      padding-bottom: 59px;
+      padding-left: 5.25%;
+      padding-right: 6%;
   }
 }
 
@@ -65,7 +65,7 @@
   background-color: @basic_grey;
 
   @media (min-width: @desktop-width) {
-    background-color: @white-txt;
+      background-color: @white-txt;
   }
 }
 
@@ -80,9 +80,9 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    font-size: 20px;
-    line-height: 25px;
-    width: 171px;
+      font-size: 20px;
+      line-height: 25px;
+      width: 171px;
   }
 }
 
@@ -97,21 +97,21 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    font-size: 16px;
-    line-height: 20px;
-    width: 159px;
-    text-align: right;
+      font-size: 16px;
+      line-height: 20px;
+      width: 159px;
+      text-align: right;
   }
 
   @media (min-width: @desktop-width) {
-    text-align: left;
+      text-align: left;
   }
 }
 
 .page-footer__street {
   @media (min-width: @tablet-width) {
-    display: block;
-    margin-bottom: 17px;
+      display: block;
+      margin-bottom: 17px;
   }
 }
 
@@ -119,18 +119,26 @@
   display: block;
   padding-top: 39px;
   padding-bottom: 27px;
-  border-bottom: 1px solid #D9D9D9;
+  border-bottom: 1px solid #d9d9d9;
+
+  &:hover {
+      opacity: 0.8;
+  }
+
+  &:active {
+      opacity: 0.6;
+  }
 
   @media (min-width: @tablet-width) {
-    padding: 0;
-    margin: 0;
-    border-bottom: none;
-    margin-right: 32px;
-    padding-top: 8px;
+      padding: 0;
+      margin: 0;
+      border-bottom: none;
+      margin-right: 32px;
+      padding-top: 8px;
   }
 }
 
-.page-footer__list{
+.page-footer__list {
   list-style: none;
   margin: 0;
   padding: 3px 0;
@@ -149,7 +157,7 @@
   border-bottom: 1px solid @border-grey;
 
   @media (min-width: @tablet-width) {
-    border-bottom: none;
+      border-bottom: none;
   }
 }
 
@@ -160,12 +168,12 @@
   align-items: center;
 
   @media (min-width: @tablet-width) {
-    padding: 0;
-    margin: 0;
+      padding: 0;
+      margin: 0;
   }
 }
 
-.page-footer__copyright-name{
+.page-footer__copyright-name {
   font-family: @arial-fnt;
   font-size: 16px;
   line-height: 18px;
@@ -174,13 +182,20 @@
   display: block;
 
   @media (min-width: @tablet-width) {
-    margin-right: 23px;
+      margin-right: 23px;
   }
 }
 
 .page-footer__copyright-img {
   width: auto;
   height: 34px;
+}
+
+.page-footer__copyright:hover .page-footer__copyright-img path {
+  fill: @basic_green;
+}
+.page-footer__copyright:active {
+  opacity: 0.3;
 }
 
 .page-footer__link {
@@ -195,10 +210,14 @@
   fill: @basic_green;
 }
 
+.page-footer__link:active path {
+  fill: @activ-green;
+}
+
 .page-footer__img {
   @media (min-width: @tablet-width) {
-    width: auto;
-    height: 23px;
+      width: auto;
+      height: 23px;
   }
 }
 
@@ -206,6 +225,6 @@
   height: 362px;
 
   @media (min-width: @tablet-width) {
-    min-height: 400px;
+      min-height: 400px;
   }
 }
